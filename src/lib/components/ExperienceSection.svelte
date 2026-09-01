@@ -23,9 +23,9 @@ const experience = [
         roles: [
             {
                 title: 'Software Engineer - Internship',
-                dates: 'Jun 2026 - Present',
+                dates: 'Jun 2026 - Sep 2026',
                 location: 'Seattle, Washington, United States',
-                note: 'Deployed Waystation to production serving over 35,000+ students, hardening the application with comprehensive error handling, internationalization, dark mode, and white-label theming.'
+                note: 'Deployed Waystation to production serving over 35,000+ students daily, hardening the application with comprehensive error handling, internationalization, dark mode, and white-label theming.'
             },
             {
                 title: 'Software Engineer - Google Summer of Code',
@@ -38,7 +38,7 @@ const experience = [
         company: 'FizzCore',
         roles: [
             {
-                title: 'MC Server Administrator',
+                title: 'MC Server Admin',
                 dates: 'Feb 2021 - Jul 2021',
                 note: 'Built and maintained core server systems: custom bridge maps, in-game GUIs, and a full permissions/rank hierarchy. Owned server branding and communication tooling from banners to broadcast messaging.'
 
