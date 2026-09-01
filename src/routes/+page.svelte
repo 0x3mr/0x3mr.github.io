@@ -7,8 +7,9 @@
 	import LikesDislikesSection from '$lib/components/LikesDislikesSection.svelte';
 
 	import parkourexImg from '$lib/imgs/ParkourEX.png';
-	import parkourImg from '$lib/imgs/Parkour Event.png';
-	import waystationImg from '$lib/work/Waystation/Waystation Banner.png';
+	import parkourOriginalImg from '$lib/imgs/Drogonite Parkour Event.jpg';
+	import parkourRemakeImg from '$lib/imgs/Zewail Parkour Event.png';
+	import waystationImg from '$lib/work/Waystation/Waystation live on the campus of University of California, San Diego | August 27th, 2026.jpg';
 
 	import { posts } from '$lib/posts.js';
 
@@ -90,33 +91,39 @@
 
 <ExperienceSection />
 <PreviousWorkSection />
-
 <NotableProjectsSection
-	projects={[
-		{
-			title: 'Parkour Event × Carry1st',
-			blurb: 'Competitive parkour event built and run in partnership with Carry1st, featuring custom-built courses, live leaderboards, and prize-driven rounds.',
-			stack: ['Competitive Event', 'Minecraft', 'Event Design'],
-			image: parkourImg,
-			year: '2025'
-		},
-		{
-			title: 'ParkourEX',
-			blurb: 'A Minecraft parkour plugin with checkpoint holograms, session tracking, and configurable per-run commands, backed by SQLite persistence.',
-			stack: ['Java', 'Maven', 'SQLite'],
-			image: parkourexImg,
-			href: 'https://github.com/0x3mr/ParkourEX',
-			year: '2026'
-		},
-		{
-			title: 'Waystation',
-			blurb: 'a real-time transit display that keeps riders informed of departures, arrivals, and service disruptions at any stop. Built with SvelteKit, and OBA APIs, it delivers fast, localized, and reliable transit updates.',
-			stack: ['SvelteKit', 'JavaScript'],
-			image: waystationImg,
-			href: 'https://opentransitsoftwarefoundation.org/onebusaway/software/waystation/',
-			year: '2025 - 2026'
-		}
-	]}
+projects={[
+    {
+        title: 'Parkour Event w/ Jartex Community',
+        blurb: '88 concurrent players. Five stages of increasing difficulty, all built solo, custom gameplay and moderation logic in Skript, plus anti-cheat protections. Minecraft 1.8.9',
+        stack: ['Skript', 'Minecraft 1.8.9', 'Event Design'],
+        image: parkourOriginalImg,
+        year: '2021'
+    },
+    {
+        title: 'Parkour Event × Carry1st & Zewail eSports',
+        blurb: 'Rebuilt the original 2021 event from scratch for modern Minecraft, migrating legacy gameplay and event workflows to a new engine version in partnership with Carry1st and Zewail eSports. Delivered a successful remake featuring custom-built courses, live leaderboards, and prize-driven rounds.',
+        stack: ['Competitive Event', 'Minecraft', 'Event Design'],
+        image: parkourRemakeImg,
+        year: '2026'
+    },
+    {
+        title: 'ParkourEX - Minecraft Plugin',
+        blurb: 'A Minecraft parkour plugin with checkpoint holograms, session tracking, and configurable per-run commands, backed by SQLite persistence.',
+        stack: ['Java', 'Maven', 'SQLite'],
+        image: parkourexImg,
+        href: 'https://github.com/0x3mr/ParkourEX',
+        year: '2026'
+    },
+    {
+        title: 'Waystation',
+        blurb: 'a real-time transit display that keeps riders informed of departures, arrivals, and service disruptions at any stop. Built with SvelteKit, and OBA APIs, it delivers fast, localized, and reliable transit updates.',
+        stack: ['SvelteKit', 'JavaScript'],
+        image: waystationImg,
+        href: 'https://opentransitsoftwarefoundation.org/onebusaway/software/waystation/',
+        year: '2025 - 2026'
+    }
+]}
 />
 
 <LikesDislikesSection />

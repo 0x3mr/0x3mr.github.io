@@ -107,27 +107,29 @@
 		z-index: 2;
 	}
 
-	.media {
-		position: relative;
-		overflow: hidden;
-		min-height: 230px;
-	}
+.media {
+    position: relative;
+    overflow: hidden;
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.04);
+}
 
-	.media img {
-		position: absolute;
-		inset: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		transform: scale(1.08) rotate(0.001deg);
-		filter: saturate(0.92);
-		transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
-	}
+.media img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: saturate(0.92);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
 
-	.card:hover .media img {
-		transform: scale(1.16);
-		filter: saturate(1.08);
-	}
+.card:hover .media img {
+    transform: scale(1.04);
+    filter: saturate(1.08);
+}
 
 	.media-scrim {
 		position: absolute;
